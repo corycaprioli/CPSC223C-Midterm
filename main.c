@@ -13,13 +13,11 @@ int main() {
   int size;
 
   printf("Please enter a file name to be copied: ");
-  scanf("%s", filename);
-  size = copyfile(filename, file_content);
-  printf("%s\n", file_content);
-  printf("%d\n", size);
-
-
-
+  scanf("%s", filename); // get file name from user
+  size = copyfile(filename, file_content); //copy the file with the function
+  printf("one dim array:\n%s", file_content); // print out array and the length
+  printf("number of char: %d\n\n", size);
+  printf("Goodbye.\n\n");
 
   return 0;
 }

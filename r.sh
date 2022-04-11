@@ -4,13 +4,13 @@
 
 echo "Begin program"
 rm *.o
-rm *.out
+rm *.out #compile
 gcc -c -m64 -std=c17 -o copy.o copyfile.c
 gcc -c -m64 -std=c17 -o mai.o main.c
 
 # Linker
 gcc -m64 -std=c17 -o main.out mai.o copy.o
 
-# Now execute the executable
+# execute
 ./main.out
 echo "All Done."

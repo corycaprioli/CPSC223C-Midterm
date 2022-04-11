@@ -1,6 +1,7 @@
 //Author: Cory Caprioli
 //Email: cory.caprioli@csu.fullerton.edu
 //CPSC 223C Midterm
+
 #include <stdio.h>
 #include <string.h>
 
@@ -30,6 +31,7 @@ int copyfile(char * file, char * file_array) {
 
     int size = strlen(file_array);
     return size;
+    
  } else {
    printf("file does not exist\n");
    return 0;
